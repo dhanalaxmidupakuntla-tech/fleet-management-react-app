@@ -4,6 +4,7 @@ Focus on React fundamentals and logic, not styling.
 Keep UI minimal and functional.
 Code structure, hooks usage, and correctness are more important than design.
 Do not use external state management libraries.
+
 3. Application Overview
 Build a Mini Fleet Management App using React that includes:
 
@@ -11,10 +12,12 @@ Authentication
 Routing & protected routes
 Fleet CRUD operations
 Basic performance optimization using React memoization techniques
+
 4. Routes & Access Control
 Route	Access Type	Description
 /login	Public	Login page
 /admin	Protected	Admin dashboard
+
 5. Page 1: Login Page (/login)
 UI Requirements
 Email input
@@ -39,16 +42,19 @@ useState → input & auth state
 useRef → focus email input on mount
 useEffect → handle side effects
 React Router navigation
+
 6. Protected Routing Requirement
 /admin must be accessible only after login
 Unauthenticated access should redirect to /login
 Implement a reusable ProtectedRoute component
+
 7. Page 2: Admin Dashboard (/admin)
 The admin dashboard must contain:
 
 Navbar
 Sidebar
 Main Content Area
+
 8. Sidebar: Add Fleet Form
 Form fields:
 
@@ -64,6 +70,7 @@ Clear form after submission
 Hooks Required
 useState for form and fleet data
 Controlled inputs
+
 9. Main Content: Fleet Cards
 Render all fleets as cards.
 
@@ -75,6 +82,7 @@ Availability Status
 Static vehicle image (same image for all)
 Layout
 3 cards per row (basic CSS grid/flex)
+
 10. Card Actions
 Each card must support:
 
@@ -89,6 +97,7 @@ Update UI immediately
 Show confirm() before deleting
 Delete only if confirmed
 Re-render UI correctly
+
 11. Performance Optimization Requirement (Mandatory)
 To avoid unnecessary re-renders:
 
@@ -116,4 +125,4 @@ Clear form after adding
 Update Driver
 Prevent empty or whitespace-only names
 Delete Vehicle
-Always confirm before deletion
+Always confirm before deletion`
