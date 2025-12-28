@@ -1,6 +1,9 @@
 import React from 'react'
 import { AuthProvider } from './AuthContext'
 import Login from './pages/Login'
+import Admin from './pages/Admin'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import ProtectedRoute from './ProtectedRoute'
 
 const App = () => {
   return (
@@ -8,7 +11,7 @@ const App = () => {
       <BrowserRouter>
       <Routes>
         <Route path = "/login" element = {<Login />} />
-        <Route path = "./admain" element ={
+        <Route path = "/admin" element ={
           <ProtectedRoute>
             <Admin />
           </ProtectedRoute>
@@ -22,4 +25,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

@@ -1,7 +1,9 @@
 import React, { useCallback, useState } from 'react'
+import Sidebar from '../components/Sidebar'
+import FleetCard from '../components/FleetCard';
 
 const Admin = () => {
-  const [fleet, setFleets] = useState([]);
+  const [fleets, setFleets] = useState([]);
 
   const updateDriver = useCallback((id) => {
     const name = prompt("Enter new Driver name" );
@@ -32,10 +34,10 @@ const Admin = () => {
 
         <div style={{
           display:'grid',
-          gridTemplateColumns:"repear(3, 1fr)",
+          gridTemplateColumns:'repeat(3, 1fr)',
           gap:10,
         }}>
-          {setFleets.map((fleet) => (
+          {fleets.map((fleet) => (
             <FleetCard 
               key={fleet.id}
               fleet={fleet}
@@ -50,4 +52,4 @@ const Admin = () => {
   )
 }
 
-export default Admin
+export default Admin;
