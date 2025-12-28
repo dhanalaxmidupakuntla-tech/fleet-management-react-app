@@ -43,6 +43,8 @@ const Sidebar = ({ setFleets }) => {
         onChange={(e) => setForm({ ...form, regNo: e.target.value })}
       />
 
+      <br />
+
       <select
         value={form.category}
         onChange={(e) => setForm({ ...form, category: e.target.value })}
@@ -54,11 +56,17 @@ const Sidebar = ({ setFleets }) => {
         <option>Bus</option>
       </select>
 
+      <br />  
+      <br />
+      
       <input
         placeholder="Driver Name"
         value={form.driver}
         onChange={(e) => setForm({ ...form, driver: e.target.value })}
       />
+
+      <br />
+      <br />
 
       <select
         value={form.status}
@@ -67,6 +75,9 @@ const Sidebar = ({ setFleets }) => {
         <option>Available</option>
         <option>Unavailable</option>
       </select>
+
+      <br />
+      <br />
 
       <button onClick={handleAdd}>Add Fleet</button>
     </div>

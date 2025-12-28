@@ -26,9 +26,12 @@ const Admin = () => {
   }, [])
 
   return (
-    <div style={{display:"flex"}}>
-      <Sidebar setFleets={setFleets} />
-
+    <div style={{display:"flex", flexDirection:"row", padding:20, gap:20, alignItems:"flex-start"}}>
+      <div>
+        <Sidebar setFleets={setFleets} />
+      </div>
+      <br />
+      <br />
       <div style={{flex:1}}>
         <h2>Fleet List</h2>
 
