@@ -32,6 +32,10 @@ const Admin = () => {
       <div style={{flex:1}}>
         <h2>Fleet List</h2>
 
+        <br />
+        <br />
+        <br />
+
         <div style={{
           display:'grid',
           gridTemplateColumns:'repeat(3, 1fr)',
